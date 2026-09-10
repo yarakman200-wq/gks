@@ -1,0 +1,4 @@
+name: gks/sitepackage
+label: 'sitepackage'
+dependencies:
+  - bootstrap-package/full

@@ -1,0 +1,80 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.typoscript'
+@import 'EXT:sitepackage/Configuration/TypoScript/Library/lib.inhalt.typoscript'
+@import 'EXT:sitepackage/Configuration/TypoScript/Library/lib.banner.typoscript'
+
+@import 'EXT:sitepackage/Configuration/TypoScript/Library/lib.footer.typoscript'
+@import 'EXT:sitepackage/Resources/Private/Container/TypoScript/setup.typoscript'
+config.contentObjectExceptionHandler = 0
+config.debug = 1
+
+page = PAGE
+page {
+  meta {
+    viewport = width=device-width, initial-scale=1.0
+  }
+
+  config {
+    headerComment = Made  ❤ by your TYPO3 Documentation Team
+    no_cache = 1
+    admPanel = 1
+  }
+
+  meta.author = THE HIGH FVES
+  meta.description = PlayBack Band Auftritte
+
+  includeCSS {
+    fontawesome = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
+    remixicon = https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css
+    gfonts = https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap
+    css = EXT:sitepackage/Resources/Public/Css/style.css
+    footer = EXT:sitepackage/Resources/Public/Css/footer.css
+  }
+
+  10 = FLUIDTEMPLATE
+  10 {
+    templateName = Page
+    layoutRootPaths {
+      10 = EXT:sitepackage/Resources/Private/Layouts
+    }
+    templateRootPaths {
+      10 = EXT:sitepackage/Resources/Private/Templates
+    }
+    partialRootPaths {
+      10 = EXT:sitepackage/Resources/Private/Partials
+    }
+  }
+}
+
+# Force larger image generation for Text & Media / Image / Textpic content elements
+# This overrides the default fluid_styled_content 600px limit even if the constants are not picked up in the active site setup.
+tt_content {
+    textmedia {
+        dataProcessing {
+            20 {
+                maxGalleryWidth = 10000
+                maxGalleryWidthInText = 10000
+            }
+        }
+    }
+
+    textpic {
+        dataProcessing {
+            20 {
+                maxGalleryWidth = 10000
+                maxGalleryWidthInText = 10000
+            }
+        }
+    }
+
+    image {
+        dataProcessing {
+            20 {
+                maxGalleryWidth = 10000
+                maxGalleryWidthInText = 10000
+            }
+        }
+    }
+}
+
+

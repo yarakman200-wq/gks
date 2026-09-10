@@ -1,0 +1,28 @@
+styles.content.textmedia {
+    maxW = 10000
+    maxWInText = 10000
+}
+
+page {
+    includeCSS {
+        theme = EXT:sitepackage/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        sitepackage_scripts = EXT:sitepackage/Resources/Public/JavaScript/main.js
+    }
+}
+
+

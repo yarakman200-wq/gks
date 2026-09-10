@@ -1,0 +1,27 @@
+styles:
+  content:
+    textmedia:
+      maxW: 10000
+      maxWInText: 10000
+
+plugin.bootstrap_package.settings.scss.primary: '#eb3e4a'
+plugin.bootstrap_package.settings.scss.secondary: '#013859'
+plugin.bootstrap_package.view.layoutRootPath: 'EXT:sitepackage/Resources/Private/Layouts/'
+plugin.bootstrap_package.view.partialRootPath: 'EXT:sitepackage/Resources/Private/Partials/'
+plugin.bootstrap_package.view.templateRootPath: 'EXT:sitepackage/Resources/Private/Templates/'
+
+plugin.bootstrap_package_contentelements.view.layoutRootPath: 'EXT:sitepackage/Resources/Private/Layouts/ContentElements/'
+plugin.bootstrap_package_contentelements.view.partialRootPath: 'EXT:sitepackage/Resources/Private/Partials/ContentElements/'
+plugin.bootstrap_package_contentelements.view.templateRootPath: 'EXT:sitepackage/Resources/Private/Templates/ContentElements/'
+
+page.logo.file: 'EXT:sitepackage/Resources/Public/Images/logo.png'
+page.logo.fileInverted: 'EXT:sitepackage/Resources/Public/Images/logo.png'
+page.logo.width: 192
+page.logo.alt: 'GKS Gebäude Service GmbH'
+page.logo.linktitle: 'GKS Gebäude Service GmbH'
+
+page.favicon.file: 'EXT:sitepackage/Resources/Public/Icons/favicon.ico'
+
+page.fluidtemplate.layoutRootPath: 'EXT:sitepackage/Resources/Private/Layouts/Page/'
+page.fluidtemplate.partialRootPath: 'EXT:sitepackage/Resources/Private/Partials/Page/'
+page.fluidtemplate.templateRootPath: 'EXT:sitepackage/Resources/Private/Templates/Page/'

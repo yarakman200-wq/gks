@@ -1,0 +1,128 @@
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
+editor:
+  config:
+    importModules:
+      - { 'module': '@ckeditor/ckeditor5-font', 'exports': [ 'Font' ] }
+
+    contentsCss:
+      - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
+      - "EXT:sitepackage/Resources/Public/Css/rte.css"
+
+    toolbar:
+      items:
+        - sourceEditing
+        - "|"
+        - undo
+        - redo
+        - "|"
+        - removeFormat
+        - "|"
+        - findAndReplace
+        - "|"
+        - selection
+        - "|"
+        - style
+        - heading
+        - '-'
+        - bold
+        - italic
+        - underline
+        - strikethrough
+        - subscript
+        - superscript
+        - softhyphen
+        - '|'
+        - numberedList
+        - bulletedList
+        - '|'
+        - indent
+        - outdent
+        - '|'
+        - blockQuote
+        - '|'
+        - alignment
+        - '|'
+        - link
+        - '-'
+        - insertTable
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - '|'
+        - specialCharacters
+        - horizontalLine
+        - '|'
+        - OepnvPicto
+        - OepnvSignets
+        - '|'
+        - fontColor
+        - fontBackgroundColor
+        - '|'
+        - highlight
+
+    fontColor:
+      colors:
+        - { label: 'Weiß', color: '#fff' }
+        - { label: 'Schwarz', color: 'black' }
+        - { label: 'Gradient', color: 'rgb(34, 66, 115)' }
+        - { label: 'DunkelBlau', color: '#475467' }
+
+
+
+    wordCount:
+      displayWords: true
+      displayCharacters: true
+
+    heading:
+      options:
+        - { model: 'paragraph', title: 'Paragraph' }
+        - { model: 'heading2', view: 'h2', title: 'H2' }
+        - { model: 'heading3', view: 'h3', title: 'H3' }
+        - { model: 'heading4', view: 'h4', title: 'H4' }
+
+    style:
+      definitions:
+        - { name: 'Seitentitel', element: "p", classes: ['site_title'] }
+        - { name: 'Beschreibung Überschrift', element: "p", classes: ['top_title'] }
+        - { name: 'Button', element: "a", classes: ['button'] }
+        - { name: 'Button mit weißem Hintergrund', element: "a", classes: ['button white'] }
+
+       
+
+    alignment:
+      options:
+        - { name: 'left', className: 'text-start' }
+        - { name: 'center', className: 'text-center' }
+        - { name: 'right', className: 'text-end' }
+
+    # format tags:
+    format_tags: "p;h2;h3;h4"
+
+    table:
+      defaultHeadings: { rows: 1 }
+      contentToolbar:
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - tableProperties
+        - tableCellProperties
+      
+    #removeButtons:
+
+    forcePasteAsPlainText: true
+
+    htmlSupport: 
+      allow: 
+        #- name: 'button'
+        #- attributes: true
+        #- classes: true
+        - { name: 'span', attributes: true, classes: true, styles: false }
+        - { name: 'i', attributes: true, classes: true, styles: false }
+        - { name: 'img', attributes: true, classes: true, styles: false }
+        - { name: 'table', attributes: true, classes: true, styles: false }

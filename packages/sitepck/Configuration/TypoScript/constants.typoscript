@@ -1,0 +1,6 @@
+test.constant = 123
+
+styles.content.textmedia {
+  maxW = 1000
+  maxWInText = 1000
+}

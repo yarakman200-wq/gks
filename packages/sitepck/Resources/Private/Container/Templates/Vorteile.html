@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="vorteile">
+    <div class="gridvorteile-container">
+        <f:for each="{children_1000}" as="record">
+            <div class="vorteile-item">
+                <i class="fa-solid fa-handshake"></i>
+                <f:format.raw>{record.renderedContent}</f:format.raw>
+            </div>
+        </f:for>
+        <f:for each="{children_1001}" as="record">
+            <div class="vorteile-item">
+                <i class="fa-solid fa-gears"></i>
+                <f:format.raw>{record.renderedContent}</f:format.raw>
+            </div>
+        </f:for>
+        <f:for each="{children_1002}" as="record">
+            <div class="vorteile-item">
+                <i class="fa-solid fa-clock"></i>
+                <f:format.raw>{record.renderedContent}</f:format.raw>
+            </div>
+        </f:for>
+        <f:for each="{children_1003}" as="record">
+            <div class="vorteile-item">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <f:format.raw>{record.renderedContent}</f:format.raw>
+            </div>
+        </f:for>
+    </div>
+</div>
+
+</html>

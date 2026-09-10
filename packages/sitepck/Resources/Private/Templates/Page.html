@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Index" />
+<f:section name="content">
+
+  <!-- TYPO3SEARCH_begin -->
+
+  <f:render partial="Navigation" />
+
+  <div class="inhalt">
+    <f:cObject typoscriptObjectPath="lib.banner" />
+        <f:cObject typoscriptObjectPath="lib.inhalt" />
+
+  </div>
+
+  <f:render partial="Footer" />
+
+</f:section>
+</html>

@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="services-cards">
+    <f:for each="{children_900}" as="record">
+        <div class="services-card">
+            <f:format.raw>{record.renderedContent}</f:format.raw>
+        </div>
+    </f:for>
+</div>
+
+</html>

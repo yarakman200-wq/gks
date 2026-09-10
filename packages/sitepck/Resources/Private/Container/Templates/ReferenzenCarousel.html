@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="referenzenslide">
+    <center><p>Unsere Referenzen:</p></center>
+    <br>
+    <hr>
+    <div class="containerref">
+        <div class="carousel">
+            <f:for each="{children_400}" as="record">
+                <div class="referenz">
+                    <f:format.raw>{record.renderedContent}</f:format.raw>
+                </div>
+            </f:for>
+            
+            <!-- Duplicate for seamless loop -->
+            <f:for each="{children_400}" as="record">
+                <div class="referenz">
+                    <f:format.raw>{record.renderedContent}</f:format.raw>
+                </div>
+            </f:for>
+        </div>
+    </div>
+    <hr>
+</div>
+
+</html>

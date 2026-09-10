@@ -1,0 +1,439 @@
+// 2 Spalten nebeneinander
+tt_content.2rowcontainer < lib.contentElement
+tt_content.2rowcontainer {
+    templateName = Zweirow
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+    dataProcessing {
+        200 = B13\Container\DataProcessing\ContainerProcessor
+        200 {
+            colPos = 200
+            as = children_200
+        }
+        201 = B13\Container\DataProcessing\ContainerProcessor
+        201 {
+            colPos = 201
+            as = children_201
+        }
+    }
+}
+// 2 Spalten nebeneinander
+tt_content.Dienstleistungs_Header < lib.contentElement
+
+tt_content.Dienstleistungs_Header {
+
+    templateName = DienstleistungsHeader
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+}
+// 2 Spalten nebeneinander
+tt_content.Dienstleistungs_Header < lib.contentElement
+
+tt_content.Dienstleistungs_Header {
+
+    templateName = DienstleistungsHeader
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+
+        300 = B13\Container\DataProcessing\ContainerProcessor
+        300 {
+            colPos = 300
+            as = children_300
+        }
+
+        301 = B13\Container\DataProcessing\ContainerProcessor
+        301 {
+            colPos = 301
+            as = children_301
+        }
+    }
+}
+
+// Referenzen Carousel
+tt_content.referenzen_carousel < lib.contentElement
+
+tt_content.referenzen_carousel {
+
+    templateName = ReferenzenCarousel
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        400 = B13\Container\DataProcessing\ContainerProcessor
+        400 {
+            colPos = 400
+            as = children_400
+        }
+    }
+}
+
+tt_content.ergebnis_bild < lib.contentElement
+
+tt_content.ergebnis_bild {
+
+    templateName = ErgebnisBild
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        500 = B13\Container\DataProcessing\ContainerProcessor
+        500 {
+            colPos = 500
+            as = children_500
+        }
+    }
+}
+
+tt_content.google_maps < lib.contentElement
+
+tt_content.google_maps {
+
+    templateName = GoogleMaps
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        600 = B13\Container\DataProcessing\ContainerProcessor
+        600 {
+            colPos = 600
+            as = children_600
+        }
+    }
+}
+
+tt_content.start_first < lib.contentElement
+
+tt_content.start_first {
+
+    templateName = Landingpage
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        700 = B13\Container\DataProcessing\ContainerProcessor
+        700 {
+            colPos = 700
+            as = children_700
+        }
+    }
+}
+
+tt_content.statistik < lib.contentElement
+
+tt_content.statistik {
+
+    templateName = Statistik
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        800 = B13\Container\DataProcessing\ContainerProcessor
+        800 {
+            colPos = 800
+            as = children_800
+        }
+        801 = B13\Container\DataProcessing\ContainerProcessor
+        801 {
+            colPos = 801
+            as = children_801
+        }
+        802 = B13\Container\DataProcessing\ContainerProcessor
+        802 {
+            colPos = 802
+            as = children_802
+        }   
+    }
+}
+
+// Leistungen Cards mit Bild und Hover Overlay
+tt_content.leistungen < lib.contentElement
+
+tt_content.leistungen {
+
+    templateName = ServicesCards
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        900 = B13\Container\DataProcessing\ContainerProcessor
+        900 {
+            colPos = 900
+            as = children_900
+        }
+    }
+}
+
+// Vorteile Karten
+tt_content.vorteile < lib.contentElement
+
+tt_content.vorteile {
+
+    templateName = Vorteile
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        1000 = B13\Container\DataProcessing\ContainerProcessor
+        1000 {
+            colPos = 1000
+            as = children_1000
+        }
+        1001 = B13\Container\DataProcessing\ContainerProcessor
+        1001 {
+            colPos = 1001
+            as = children_1001
+        }
+        1002 = B13\Container\DataProcessing\ContainerProcessor
+        1002 {
+            colPos = 1002
+            as = children_1002
+        }
+        1003 = B13\Container\DataProcessing\ContainerProcessor
+        1003 {
+            colPos = 1003
+            as = children_1003
+        }
+    }
+}
+
+
+tt_content.textfeld < lib.contentElement
+
+tt_content.textfeld {
+
+    templateName = Textfeld
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        1100 = B13\Container\DataProcessing\ContainerProcessor
+        1100 {
+            colPos = 1100
+            as = children_1100
+        }
+    }
+}
+
+// Vorteile / Stellen
+tt_content.stellen < lib.contentElement
+
+tt_content.stellen {
+
+    templateName = Stellen
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        1200 = B13\Container\DataProcessing\ContainerProcessor
+        1200 {
+            colPos = 1200
+            as = children_1200
+        }
+        1201 = B13\Container\DataProcessing\ContainerProcessor
+        1201 {
+            colPos = 1201
+            as = children_1201
+        }
+        1202 = B13\Container\DataProcessing\ContainerProcessor
+        1202 {
+            colPos = 1202
+            as = children_1202
+        }
+        1203 = B13\Container\DataProcessing\ContainerProcessor
+        1203 {
+            colPos = 1203
+            as = children_1203
+        }
+    }
+}
+
+// Einzelne Job-Anzeige
+tt_content.job_card < lib.contentElement
+
+tt_content.job_card {
+
+    templateName = JobCard
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        1300 = B13\Container\DataProcessing\ContainerProcessor
+        1300 {
+            colPos = 1300
+            as = children_1300
+        }
+        1301 = B13\Container\DataProcessing\ContainerProcessor
+        1301 {
+            colPos = 1301
+            as = children_1301
+        }
+        1302 = B13\Container\DataProcessing\ContainerProcessor
+        1302 {
+            colPos = 1302
+            as = children_1302
+        }
+        1303 = B13\Container\DataProcessing\ContainerProcessor
+        1303 {
+            colPos = 1303
+            as = children_1303
+        }
+        1304 = B13\Container\DataProcessing\ContainerProcessor
+        1304 {
+            colPos = 1304
+            as = children_1304
+        }
+        1305 = B13\Container\DataProcessing\ContainerProcessor
+        1305 {
+            colPos = 1305
+            as = children_1305
+        }
+    }
+}
+
+// Stellenangebote mit Intro und mehreren Job-Karten
+tt_content.jobs_alle < lib.contentElement
+
+tt_content.jobs_alle {
+
+    templateName = JobsAlle
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        1210 = B13\Container\DataProcessing\ContainerProcessor
+        1210 {
+            colPos = 1210
+            as = children_1210
+        }
+        1211 = B13\Container\DataProcessing\ContainerProcessor
+        1211 {
+            colPos = 1211
+            as = children_1211
+        }
+        1212 = B13\Container\DataProcessing\ContainerProcessor
+        1212 {
+            colPos = 1212
+            as = children_1212
+        }
+        1213 = B13\Container\DataProcessing\ContainerProcessor
+        1213 {
+            colPos = 1213
+            as = children_1213
+        }
+        1214 = B13\Container\DataProcessing\ContainerProcessor
+        1214 {
+            colPos = 1214
+            as = children_1214
+        }
+    }
+}
+
+// Kontaktseite - Kontaktinformationen und Formular
+tt_content.kontakt_form < lib.contentElement
+
+tt_content.kontakt_form {
+
+    templateName = KontaktForm
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        1499 = B13\Container\DataProcessing\ContainerProcessor
+        1499 {
+            colPos = 1499
+            as = children_1499
+        }
+        1500 = B13\Container\DataProcessing\ContainerProcessor
+        1500 {
+            colPos = 1500
+            as = children_1500
+        }
+        1501 = B13\Container\DataProcessing\ContainerProcessor
+        1501 {
+            colPos = 1501
+            as = children_1501
+        }
+        1502 = B13\Container\DataProcessing\ContainerProcessor
+        1502 {
+            colPos = 1502
+            as = children_1502
+        }
+        1503 = B13\Container\DataProcessing\ContainerProcessor
+        1503 {
+            colPos = 1503
+            as = children_1503
+        }
+        1504 = B13\Container\DataProcessing\ContainerProcessor
+        1504 {
+            colPos = 1504
+            as = children_1504
+        }
+    }
+}
+
+// Bewerbungsseite - Bewerbungsinformationen und Formular
+tt_content.bewerbungs_form < lib.contentElement
+
+tt_content.bewerbungs_form {
+
+    templateName = BewerbungsForm
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        1600 = B13\Container\DataProcessing\ContainerProcessor
+        1600 {
+            colPos = 1600
+            as = children_1600
+        }
+        1601 = B13\Container\DataProcessing\ContainerProcessor
+        1601 {
+            colPos = 1601
+            as = children_1601
+        }
+        1602 = B13\Container\DataProcessing\ContainerProcessor
+        1602 {
+            colPos = 1602
+            as = children_1602
+        }
+        1603 = B13\Container\DataProcessing\ContainerProcessor
+        1603 {
+            colPos = 1603
+            as = children_1603
+        }
+       
+    }
+}

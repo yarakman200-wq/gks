@@ -1,0 +1,93 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="kontakt-section">
+    
+    <div class="kontakt-wrapper">
+
+    <!-- Linke Spalte: Kontaktinformationen -->
+    <div class="kontakt-info">
+
+        <!-- Telefon -->
+
+ <f:for each="{children_1600}" as="record">
+                
+                        <f:format.html>{record.bodytext}</f:format.html>
+
+                
+            </f:for>
+            
+        <div class="kontakt-item">
+            <f:for each="{children_1601}" as="record">
+                <div class="kontakt-item__content">
+
+                    <div class="kontakt-item__icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+
+                    <div class="kontakt-item__text">
+                        <f:format.html>{record.bodytext}</f:format.html>
+                    </div>
+
+                </div>
+            </f:for>
+        </div>
+
+
+        <!-- E-Mail -->
+        <div class="kontakt-item">
+            <f:for each="{children_1602}" as="record">
+                <div class="kontakt-item__content">
+
+                    <div class="kontakt-item__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div class="kontakt-item__text">
+                        <f:format.html>{record.bodytext}</f:format.html>
+                    </div>
+
+                </div>
+            </f:for>
+        </div>
+
+
+        <!-- Adresse -->
+        <div class="kontakt-item">
+            <f:for each="{children_1603}" as="record">
+                <div class="kontakt-item__content">
+
+                    <div class="kontakt-item__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <div class="kontakt-item__text">
+                        <f:format.html>{record.bodytext}</f:format.html>
+                    </div>
+
+                </div>
+            </f:for>
+        </div>
+
+    </div>
+
+
+    <!-- Rechte Spalte: Kontaktformular -->
+    <div class="kontakt-form">
+
+      
+<iframe data-tally-src="https://tally.so/embed/n9P2WY?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1108" frameborder="0" marginheight="0" marginwidth="0" title="null"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+
+          
+         
+
+
+
+    </div>
+
+</div>
+
+</div>
+
+</html>

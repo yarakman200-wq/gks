@@ -1,0 +1,23 @@
+//
+// Variables
+//
+@import "variables";
+
+//
+// Import needed Bootstrap Package Files
+//
+@import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
+
+// Text & Media: override the default 600px cap and allow larger inserted images.
+.ce-textmedia img,
+.ce-textpic img,
+.ce-image img,
+.ce-gallery img,
+.ce-textmedia picture,
+.ce-textpic picture,
+.ce-image picture,
+.ce-gallery picture {
+  max-width: none !important;
+  width: auto !important;
+  height: auto !important;
+}

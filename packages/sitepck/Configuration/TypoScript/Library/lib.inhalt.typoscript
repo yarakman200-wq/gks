@@ -1,0 +1,6 @@
+#INHALT
+lib.inhalt = COA
+lib.inhalt {
+  10 < styles.content.get
+  10.select.where = colPos = 1
+}

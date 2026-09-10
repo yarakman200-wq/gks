@@ -1,0 +1,6 @@
+#INHALT
+lib.banner = COA
+lib.banner {
+  10 < styles.content.get
+  10.select.where = colPos = 0
+}

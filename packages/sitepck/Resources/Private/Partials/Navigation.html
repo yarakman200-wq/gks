@@ -1,0 +1,187 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<header class="navall">
+  <div class="navtop">
+    <div class="contact-container">
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span class="contact-info">Krugstr. 7c</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:05119204202" class="contact-info">0511 9204202</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:info@gks-gebaeude-service.de" class="contact-info">info@gks-gebaeude-service.de</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbottom">
+    <div class="navbottomall">
+      <div class="logo">
+        <f:link.page pageUid="1" aria-label="Startseite">
+          <f:image src="EXT:sitepackage/Resources/Public/Images/logo.png" alt="GKS Gebäude Service GmbH" />
+        </f:link.page>
+      </div>
+
+      <nav class="navlinks" aria-label="Main navigation">
+        <div class="linkhover"><f:link.page pageUid="1">Home</f:link.page></div>
+
+        <div class="dropdownmenu">
+          <div class="servicesicon">
+            <a href="#">Leistungen</a>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+
+          <div class="dropdowncontent">
+            <div class="itemsdrcontent">
+              <div class="itemdrop">
+                <a href="#">
+                  <i class="fa-solid fa-stairs"></i>
+                  <div>
+                    <p class="thema">Hausmeisterdienste</p>
+                    <p class="beschreibung"></p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="itemdrop">
+                <a href="#">
+                  <i class="fa-solid fa-building"></i>
+                  <div>
+                    <p class="thema">Gebäudereinigung</p>
+                    <p class="beschreibung"></p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="itemdrop">
+                <f:link.page pageUid="4">
+                  <i class="fa-solid fa-tree"></i>
+                  <div>
+                    <p class="thema">Gartenpflege</p>
+                    <p class="beschreibung"></p>
+                  </div>
+                </f:link.page>
+              </div>
+
+              <div class="itemdrop">
+                <a href="#">
+                  <i class="fa-solid fa-paint-roller"></i>
+                  <div>
+                    <p class="thema">Malerfachbetrieb</p>
+                    <p class="beschreibung"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="linkhover"><f:link.page pageUid="11">Über Uns</f:link.page></div>
+        <div class="linkhover"><f:link.page pageUid="12">Kontakt</f:link.page></div>
+      </nav>
+
+      <div class="jetztbewerben">
+        <f:link.page pageUid="14"><p>Jetzt Bewerben</p></f:link.page>
+      </div>
+
+      <div class="hamburger" aria-label="Menu">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </div>
+
+    <div class="handynav">
+      <f:link.page pageUid="1">Home</f:link.page>
+
+      <div class="serviceiconhandy"><a href="#">Leistungen</a><i class="fa-solid fa-angle-down"></i></div>
+
+      <div class="leistungen zwei">
+        <div class="itemdrop">
+          <a href="#">
+            <i class="fa-solid fa-stairs"></i>
+            <div>
+              <p class="thema">Hausmeisterdienste</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="itemdrop">
+          <a href="#">
+            <i class="fa-solid fa-building"></i>
+            <div>
+              <p class="thema">Gebäudereinigung</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="itemdrop">
+          <f:link.page pageUid="4">
+            <i class="fa-solid fa-tree"></i>
+            <div>
+              <p class="thema">Gartenpflege</p>
+            </div>
+          </f:link.page>
+        </div>
+
+        <div class="itemdrop">
+          <a href="#">
+            <i class="fa-solid fa-paint-roller"></i>
+            <div>
+              <p class="thema">Malerfachbetrieb</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <f:link.page pageUid="11">Über Uns</f:link.page>
+      <f:link.page pageUid="12">Kontakt</f:link.page>
+
+      <div class="jetztbewerbenhandy">
+        <f:link.page pageUid="14"><p>Jetzt Bewerben</p></f:link.page>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.dropdownmenu');
+    const dropdown = document.querySelector('.dropdowncontent');
+
+    if (toggle && dropdown) {
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+      });
+
+      document.addEventListener('click', function () {
+        dropdown.classList.remove('open');
+      });
+    }
+
+    const hamburger = document.querySelector('.hamburger');
+    const handynav = document.querySelector('.handynav');
+
+    if (hamburger && handynav) {
+      hamburger.addEventListener('click', function () {
+        handynav.classList.toggle('active');
+      });
+    }
+
+    const navTop = document.querySelector('.navtop');
+    if (navTop) {
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 1) {
+          navTop.style.height = '0px';
+        } else {
+          navTop.style.height = '40px';
+        }
+      });
+    }
+  });
+</script>
+
+</html>
