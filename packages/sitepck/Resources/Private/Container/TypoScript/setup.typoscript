@@ -92,6 +92,16 @@ tt_content.ergebnis_bild {
             colPos = 500
             as = children_500
         }
+        501 = B13\Container\DataProcessing\ContainerProcessor
+        501 {
+            colPos = 501
+            as = children_501
+        }
+        502 = B13\Container\DataProcessing\ContainerProcessor
+        502 {
+            colPos = 502
+            as = children_502
+        }
     }
 }
 
@@ -111,6 +121,7 @@ tt_content.google_maps {
             colPos = 600
             as = children_600
         }
+        
     }
 }
 

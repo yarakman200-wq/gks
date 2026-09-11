@@ -3,29 +3,59 @@
 
 
 
+<div class="leistungen_bilder">
 
 
-
-    <div class="vorher_nachhercontainer">
-
-    <div class="vorher_nachher_bilderc">
-
-    <div class="vorher_nachher_bildc">
-        
-        <div class="vorhernachher_bild nach" style="width: 100%;">
-
+<div class="leistung_bild">
  <f:for each="{children_500}" as="record">
             <f:format.raw>{record.renderedContent}</f:format.raw>
         </f:for>
-        </div>
-    </div>
-
-
-  
-</div>
+      
 </div>
 
+<div class="leistung_bild">
+ <f:for each="{children_501}" as="record">
+            <f:format.raw>{record.renderedContent}</f:format.raw>
+        </f:for>
+      
+</div>
+<div class="leistung_bild">
+ <f:for each="{children_502}" as="record">
+            <f:format.raw>{record.renderedContent}</f:format.raw>
+        </f:for>
+      
+</div>
+
+</div>
+<style>
+.leistungen_bilder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px auto;
+}
+
+.leistung_bild {
+    flex: 0 0 calc(33.333% - 14px);
+    height: 185px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
 
 
+  border: 1px solid transparent;
+ 
+  border-radius: 15px;
+  box-shadow: 2px 4px 6px #81767662;
+}
 
+@media (max-width: 768px) {
+    .leistung_bild {
+        flex: 0 0 100%;
+    }
+}
+</style>
 </html>

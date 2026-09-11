@@ -63,7 +63,10 @@ defined('TYPO3') or die();
             'Ergebnis Bild', // description
             [
                 [
-                    ['name' => 'Ergebnis Bild', 'colPos' => 500]
+                    ['name' => 'Ergebnis Bild', 'colPos' => 500],
+                    ['name' => 'Ergebnis Bild', 'colPos' => 501],
+                    ['name' => 'Ergebnis Bild', 'colPos' => 502],
+
                 ]
             ] // grid configuration
         )
