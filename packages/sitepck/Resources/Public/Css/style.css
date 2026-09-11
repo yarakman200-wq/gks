@@ -1291,7 +1291,7 @@ font-weight: 15px !important;
   width: 100%;
   max-width: 430px;
   max-height: 500px;
-  background: #fff;
+  background: none;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 10px 16px 38px rgba(226, 226, 226, 0.212);
