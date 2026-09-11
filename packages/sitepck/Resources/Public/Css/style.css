@@ -1307,6 +1307,7 @@ font-weight: 15px !important;
   max-width: 100% !important;
   height: auto !important;
   object-fit: contain;
+  border-radius: 20px;
 }
 .textfeld .ce-intext.ce-right .ce-gallery {
   margin-left: 40px;
@@ -1591,23 +1592,23 @@ height: 72% !important;
   height: 100%;
   border: 0;
 }
-
+.ce-textpic.ce- {
+  display: flex;
+  gap: 20px;
+}
 @media (max-width: 768px) {
   .vorteil_stelle {
     flex: 1 1 100%;
   }
+  .ce-textpic.ce- {
+  display: block !important;
+  gap: 20px;
+}
 .textfeld .ce-gallery {
   max-width: max-content;
 margin-bottom: 20px !important;
 }
-@media (max-width: 767px) {
-    .textfeld .ce-bodytext,
-    .textfeld .ce-bodytext * {
-        color: #000 !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
-}
+
 .vorher_nachher_bildc {
   width: 100% !important;
 }
