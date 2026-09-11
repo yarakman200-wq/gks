@@ -1600,7 +1600,14 @@ height: 72% !important;
   max-width: max-content;
 margin-bottom: 20px !important;
 }
-
+@media (max-width: 767px) {
+    .textfeld .ce-bodytext,
+    .textfeld .ce-bodytext * {
+        color: #000 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
 .vorher_nachher_bildc {
   width: 100% !important;
 }
