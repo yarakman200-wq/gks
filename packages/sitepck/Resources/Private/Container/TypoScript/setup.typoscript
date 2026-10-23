@@ -453,9 +453,9 @@ tt_content.bewerbungs_form {
 
 // Formular Erfolg
 // Bewerbungsseite - Bewerbungsinformationen und Formular
-tt_content.bewerbungs_form < lib.contentElement
+tt_content.formularerfolg < lib.contentElement
 
-tt_content.bewerbungs_form {
+tt_content.formularerfolg {
 
     templateName = FormularErfolg
 
