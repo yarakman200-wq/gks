@@ -284,3 +284,24 @@ defined('TYPO3') or die();
     )
     ->setIcon('EXT:sitepackage/Resources/Public/Icons/services-cards.svg')
 );
+
+
+// Kontaktseite - 2 Spalten
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
+    (
+        new \B13\Container\Tca\ContainerConfiguration(
+            'formularerfolg', // CType
+            'Formularerfolg', // label
+            'Formularertext (links) und Formularerfolg (rechts)', // description
+            [
+                [
+                    ['name' => 'InfoText', 'colPos' => 1700],
+                    ['name' => 'Telefon', 'colPos' => 1701],
+                    ['name' => 'E-Mail', 'colPos' => 1702],
+                    ['name' => 'Adresse', 'colPos' => 1703]
+                ]
+            ] // grid configuration
+        )
+    )
+    ->setIcon('EXT:sitepackage/Resources/Public/Icons/services-cards.svg')
+);

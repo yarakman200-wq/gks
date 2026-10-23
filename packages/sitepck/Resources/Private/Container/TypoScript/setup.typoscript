@@ -448,3 +448,42 @@ tt_content.bewerbungs_form {
        
     }
 }
+
+
+
+// Formular Erfolg
+// Bewerbungsseite - Bewerbungsinformationen und Formular
+tt_content.bewerbungs_form < lib.contentElement
+
+tt_content.bewerbungs_form {
+
+    templateName = FormularErfolg
+
+    templateRootPaths {
+        10 = EXT:sitepackage/Resources/Private/Container/Templates/
+    }
+
+    dataProcessing {
+        1700 = B13\Container\DataProcessing\ContainerProcessor
+        1700 {
+            colPos = 1700
+            as = children_1700
+        }
+        1701 = B13\Container\DataProcessing\ContainerProcessor
+        1701 {
+            colPos = 1701
+            as = children_1701
+        }
+        1702 = B13\Container\DataProcessing\ContainerProcessor
+        1702 {
+            colPos = 1702
+            as = children_1702
+        }
+        1703 = B13\Container\DataProcessing\ContainerProcessor
+        1703 {
+            colPos = 1703
+            as = children_1703
+        }
+       
+    }
+}
